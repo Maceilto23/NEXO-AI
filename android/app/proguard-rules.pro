@@ -1,2 +1,0 @@
--keep class com.nexoai.ultra.** { *; }
--dontwarn org.json.**
