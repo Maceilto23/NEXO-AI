@@ -25,7 +25,6 @@ jobs:
         run: gradle assembleDebug --stacktrace
       - uses: actions/upload-artifact@v4
         with:
-          name: NexoAI-2.0-debug
+          name: NexoAI-2.1-Humanoid-debug
           path: android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
-
