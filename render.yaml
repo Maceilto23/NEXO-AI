@@ -1,4 +1,4 @@
-    services:
+services:
   - type: web
     name: nexoai-api
     runtime: docker
@@ -8,7 +8,7 @@
     healthCheckPath: /api.php
 
     envVars:
-      - key: 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
+      - key: sk-proj-giEFMPJGFIS6EYPHXHzvzqJRmGBruNbJEa4MRwP8Lusu0qEaduY3voBNhK09RcYc5w_b_XPchkT3BlbkFJqiyQpKbHeMt343VZ8Q7gx1hvMZBtrWX1wYEXHq31krZs_DOvhpfU6pjHj1zG5KANFdVfsBiA4
         sync: false
 
       - key: NexoAI_Maceilto_2026_X9K7P4
