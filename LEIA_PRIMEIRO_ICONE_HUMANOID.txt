@@ -1,0 +1,29 @@
+NEXO AI 2.1 — HUMANOID PROFESSIONAL
+
+O que foi atualizado
+- Ícone principal do aplicativo substituído pela assistente humanoide Nexo AI aprovada.
+- Ícone redondo do launcher criado.
+- Assistente humanoide aplicada na tela inicial.
+- Assistente humanoide aplicada na tela de resposta.
+- Assistente humanoide aplicada ao botão flutuante.
+- Ícone específico e compatível para notificações Android.
+- Textos "robô flutuante" trocados por "assistente flutuante".
+- Versão Android atualizada para 2.1.0 (versionCode 21).
+- Workflow GitHub Actions atualizado.
+
+PARA COMPILAR NO GITHUB
+Na raiz do repositório devem existir:
+.github/workflows/build-apk.yml
+android/
+htdocs/
+README.md
+.gitignore
+
+Depois:
+GitHub > Actions > Build Nexo AI APK > Run workflow
+
+Artifact:
+NexoAI-2.1-Humanoid-debug
+
+A chave OpenAI NÃO deve ser colocada no GitHub.
+Use somente o arquivo privado config.local.php no InfinityFree, conforme a estrutura do projeto.

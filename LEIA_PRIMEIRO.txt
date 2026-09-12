@@ -1,0 +1,50 @@
+NEXO AI 2.0 — ARQUITETURA PARA USAR HOJE
+
+OBJETIVO
+- Chave OpenAI SOMENTE no InfinityFree.
+- GitHub compila o APK, mas não recebe chave de API.
+- Android usa um WebView seguro como transporte de navegador para o InfinityFree.
+- O PHP no InfinityFree chama a OpenAI no servidor.
+
+1) INFINITYFREE
+Envie SOMENTE o conteúdo da pasta htdocs/ para:
+/nexoai.page.gd/htdocs/
+
+Depois crie no InfinityFree o arquivo:
+/config.local.php
+Use config.example.php como modelo e coloque:
+- sua NOVA OPENAI_API_KEY
+- um PIN privado forte
+
+Não envie config.local.php para GitHub.
+
+Teste no navegador:
+https://nexoai.page.gd/app/health.php
+
+Tem que mostrar:
+Servidor online • OpenAI: OK • PIN: OK • cURL: OK
+
+2) GITHUB
+Envie para a raiz do repositório:
+.github/
+android/
+.gitignore
+LEIA_PRIMEIRO.txt
+
+A pasta htdocs/ pode ficar no GitHub, mas config.local.php NÃO pode existir nela.
+
+3) COMPILAR APK
+GitHub > Actions > Build Nexo AI APK > Run workflow
+Baixe o artifact NexoAI-2.0-debug.
+
+4) CONFIGURAR NO APP
+Site: https://nexoai.page.gd
+PIN: exatamente o mesmo app_pin de config.local.php
+Clique em Testar conexão.
+
+5) USAR
+- Ative o robô flutuante.
+- Ou selecione texto em qualquer app > Compartilhar/Processar texto > Nexo AI.
+
+IMPORTANTE
+A chave OpenAI que já apareceu em mensagens anteriores deve ser revogada e substituída.

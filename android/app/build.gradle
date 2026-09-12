@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.nexoai.ultra'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.nexoai.ultra'
+        minSdk 26
+        targetSdk 35
+        versionCode 21
+        versionName '2.1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
