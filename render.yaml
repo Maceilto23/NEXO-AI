@@ -6,16 +6,23 @@ services:
     dockerfilePath: ./server/Dockerfile
     dockerContext: ./server
     healthCheckPath: /api.php
+
     envVars:
-      - key: OPENAI_API_KEY
+      - key: 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
+
         sync: false
-      - key: APP_TOKEN
+
+      - key: NexoAI_Maceilto_2026_X9K7P4
         sync: false
+
       - key: OPENAI_MODEL_FAST
         value: gpt-5.6-luna
+
       - key: OPENAI_MODEL_BALANCED
         value: gpt-5.6-terra
+
       - key: OPENAI_MODEL_SMART
         value: gpt-5.6-sol
+
       - key: MAX_CHARS
         value: "12000"
